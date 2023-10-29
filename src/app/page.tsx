@@ -4,7 +4,7 @@ import Navbar from "@/components/global/Navbar";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-cyan-950">
       <Navbar />
       {/* <Header /> */}
     </div>
