@@ -3,7 +3,7 @@ import React from "react";
 function Navbar() {
   return (
     <section>
-      <div className="flex gap-[60px] items-center justify-between">
+      <div className="flex gap-[60px] items-center justify-between mb-[140px]">
         <div
           className="bg-no-repeat bg-cover min-w-[570px] flex gap-36 pt-5 pb-4"
           style={{backgroundImage: `url('/picture/Vector.png')`}}
