@@ -1,7 +1,8 @@
-import Image from "next/image";
-import Header from "./Header";
+import Header from "./home/Header";
 import Navbar from "@/components/global/Navbar";
-import Cards from "./Cards";
+import Cards from "./home/Cards";
+import Input from "./home/Input";
+import Footer from "./home/Footer";
 
 export default function Home() {
   return (
@@ -9,6 +10,8 @@ export default function Home() {
       <Navbar />
       <Header />
       <Cards />
+      <Input />
+      <Footer />
     </div>
   );
 }
