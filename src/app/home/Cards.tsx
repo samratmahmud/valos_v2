@@ -75,7 +75,7 @@ function Cards() {
         {cardProps.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col justify-between px-14 pt-12 pb-16 bg-neutral-400 rounded-[30px] border border-sky-500 max-w-[580px]"
+            className="flex flex-col justify-between px-14 pt-12 pb-16 bg-neutral-400 rounded-[30px] border border-sky-500 w-full"
           >
             <div>
               <div className="text-4xl font-bold text-white mb-12">

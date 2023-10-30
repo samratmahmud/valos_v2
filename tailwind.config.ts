@@ -11,7 +11,11 @@ const config: Config = {
     extend: {
       colors: {
         slate: {"300": "#CAD0DB"},
-        neutral: {"400": "rgba(255, 255, 255, 0.10)", "500": "#7B8499"},
+        neutral: {
+          "400": "rgba(255, 255, 255, 0.10)",
+          "500": "#7B8499",
+          "700": "rgba(1, 33, 65, 0.68)",
+        },
         cyan: {"400": "#00FFFF", "950": "#012141"},
         sky: {"500": "#0072FF"},
       },
@@ -43,12 +47,19 @@ const config: Config = {
     },
     backgroundImage: {
       sm: "linear-gradient(270deg, rgba(68, 132, 255, 0.20) -0.55%, rgba(68, 176, 255, 0.20) 22.86%, rgba(0, 255, 255, 0.20) 48.36%, rgba(68, 165, 255, 0.20) 73.33%, rgba(125, 170, 255, 0.20) 99.34%)",
+      100: "url('/picture/Group 2049.png')",
     },
     container: {
       center: true,
       padding: {
         DEFAULT: "1rem",
       },
+    },
+    screens: {
+      sm: "600px",
+      md: "768px",
+      lg: "1020px",
+      xl: "1472px",
     },
   },
   plugins: [],

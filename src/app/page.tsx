@@ -6,7 +6,7 @@ import Footer from "./home/Footer";
 
 export default function Home() {
   return (
-    <div className="bg-cyan-950">
+    <div className="bg-cyan-950 bg-100 bg-no-repeat bg-cover">
       <Navbar />
       <Header />
       <Cards />
