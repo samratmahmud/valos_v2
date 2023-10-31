@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <section className="container">
-      <div className="flex gap-8 items-center justify-between pt-16 pb-9">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 items-center justify-between md:pt-16 md:pb-9 pb-5">
         <div>
           <div className="mb-6">
             <img src="/picture/logo valos.svg" alt="" />
@@ -18,11 +18,11 @@ function Footer() {
             best practices.
           </div>
         </div>
-        <div className="">
-          <div role="button" className="text-lg text-white mb-8">
+        <div className="md:text-right lg:text-left">
+          <div role="button" className="text-lg text-white md:mb-8 mb-3">
             sales@valosit.co.ik
           </div>
-          <div className="text-lg text-white leading-6">
+          <div className="text-lg text-white md:leading-6">
             <p>71-75 Shelton Street, Covent Garden ,</p>
             <p>London, United Kingdom, WC2H 9JQ</p>
           </div>
@@ -32,11 +32,11 @@ function Footer() {
         </div>
       </div>
       <hr className="border border-neutral-400" />
-      <div className="flex flex-row justify-between items-center gap-10 pt-5 pb-6">
-        <div className="text-base text-white leading-8">
+      <div className="flex flex-row justify-between items-center md:gap-10 gap-3 md:py-6 py-4">
+        <div className="md:text-base text-md text-white leading-8">
           Developed with React js
         </div>
-        <div className="text-base text-white">
+        <div role="button" className="md:text-base text-md text-white">
           © 2021 VALOS IT LTD. All rights reserved
         </div>
       </div>

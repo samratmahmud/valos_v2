@@ -57,33 +57,35 @@ const cardProps = [
 function Cards() {
   return (
     <div className="container">
-      <div className="text-5xl font-semibold text-white text-center">
+      <div className="md:text-5xl text-3xl font-semibold text-white text-center mb-4 md:mb-0">
         <p>Empowering Success:</p>
         <p className="text-cyan-400">
           {" "}
           Unleashing the Potential of Technology Tools
         </p>
       </div>
-      <div className="text-2xl text-white max-w-[1018px] text-center m-auto font-manrope mb-12">
+      <div className="md:text-2xl text-xl text-white max-w-[1018px] text-center m-auto font-manrope md:mb-12 mb-7">
         With the rapid advancement of technology, these tools continue to
         evolve, offering innovative solutions to address various needs across
         industries. By leveraging the power of technology tools, individuals and
         businesses can unlock new possibilities, streamline operations, and
         drive success in the digital era.
       </div>
-      <div className="grid grid-cols-2 gap-10 mb-20">
+      <div className="grid lg:grid-cols-2 md:gap-10 gap-6 md:mb-20 mb-12">
         {cardProps.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col justify-between px-14 pt-12 pb-16 bg-neutral-400 rounded-[30px] border border-sky-500 w-full"
+            className="flex flex-col justify-between md:px-14 px-4 md:pt-12 md:pb-16 py-6 bg-neutral-400 md:rounded-[30px] rounded-2xl border border-sky-500 w-full"
           >
             <div>
-              <div className="text-4xl font-bold text-white mb-12">
+              <div className="md:text-4xl text-2xl font-bold text-white md:mb-12 mb-5">
                 {item.title}
               </div>
-              <div className="text-2xl text-white mb-6">{item.contant}</div>
+              <div className="md:text-2xl text-xl text-white mb-6">
+                {item.contant}
+              </div>
             </div>
-            <div className="flex flex-wrap gap-9">
+            <div className="md:flex md:flex-wrap grid grid-cols-2 gap-9 items-center">
               <img src={item.logo1} alt="" />
               <img src={item.logo2} alt="" />
               <img src={item.logo3} alt="" />

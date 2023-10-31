@@ -25,14 +25,17 @@ const networkCard = [
 
 function Header() {
   return (
-    <div className="container relative  z-50">
-      <div className="text-6xl font-semibold text-white text-center mb-10 max-w-[800px] m-auto">
+    <div className="container relative z-50">
+      <div className="md:text-6xl text-4xl font-semibold text-white text-center md:mb-10 mb-6 max-w-[800px] m-auto">
         Empowering Businesses with Full-Stack Excellence{" "}
       </div>
-      <div className="text-xl font-medium text-white bg-sky-500 py-3 px-10 rounded-lg font-manrope max-w-[172px] m-auto mb-[102px]">
+      <div
+        role="button"
+        className="text-xl font-medium text-white bg-sky-500 py-3 px-10 rounded-lg font-manrope max-w-[172px] m-auto md:mb-[102px] mb-16"
+      >
         Get in touch
       </div>
-      <div className="flex lg:flex-row flex-wrap lg:flex-nowrap gap-4 lg:gap-5 justify-between mb-48">
+      <div className="flex lg:flex-row flex-wrap lg:flex-nowrap gap-4 lg:gap-5 justify-between lg:mb-48 mb-16">
         {networkCard.map((item, index) => (
           <div
             key={index}
@@ -41,23 +44,23 @@ function Header() {
             } h-full`}
           >
             <span className="absolute -inset-[1px] -z-10 bg-md rounded-[30px]" />
-            <div className="bg-[#1A3453] py-6 px-7 w-full flex flex-col items-center rounded-[30px]">
+            <div className="bg-[#1A3453] md:py-6 py-4 px-7 w-full flex flex-col items-center rounded-[30px]">
               <div className="mb-3">
                 <img src={item.pic} alt="" />
               </div>
-              <div className="text-3xl font-semibold text-sky-500">
+              <div className="md:text-3xl text-2xl font-semibold text-sky-500">
                 {item.title}
               </div>
             </div>
           </div>
         ))}
       </div>
-      <div className="flex gap-[60px] justify-between items-center mb-48">
-        <div className="max-w-[513px] text-white">
-          <div className="text-5xl font-semibold mb-10">
+      <div className="flex lg:flex-row flex-col lg:gap-14 gap-7 justify-between items-center lg:mb-48 mb-12">
+        <div className="lg:max-w-[513px] text-white">
+          <div className="md:text-5xl text-4xl font-semibold md:mb-10 mb-6">
             The unique promise for affordable work
           </div>
-          <div className="text-2xl">
+          <div className="md:text-2xl text-lg">
             With our full-stack excellence and low-cost advantage, we empower
             businesses to thrive without breaking the bank. By leveraging our
             comprehensive solutions and remote team expertise, we help
@@ -70,7 +73,7 @@ function Header() {
           </div>
         </div>
         <div>
-          <img src="/picture/Frame 27.png" alt="" />
+          <img className="w-screen" src="/picture/Frame 27.png" alt="" />
         </div>
       </div>
     </div>
