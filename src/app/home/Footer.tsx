@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <section className="container">
-      <div className="flex gap-[60px] items-center justify-between pt-16 pb-9">
+      <div className="flex gap-8 items-center justify-between pt-16 pb-9">
         <div>
           <div className="mb-6">
             <img src="/picture/logo valos.svg" alt="" />

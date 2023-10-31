@@ -32,17 +32,20 @@ function Header() {
       <div className="text-xl font-medium text-white bg-sky-500 py-3 px-10 rounded-lg font-manrope max-w-[172px] m-auto mb-[102px]">
         Get in touch
       </div>
-      <div className="flex flex-wrap gap-5 justify-between mb-48">
+      <div className="flex lg:flex-row gap-4 justify-between mb-48">
         {networkCard.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col items-center py-6 px-7 bg-neutral-500/20 min-w-[220px] border border-sky-500 rounded-3xl"
+            className="flex flex-col items-center relative z-0 w-full h-full min-w-[185px]"
           >
-            <div className="mb-3">
-              <img src={item.pic} alt="" />
-            </div>
-            <div className="text-3xl font-semibold text-sky-500">
-              {item.title}
+            <span className="absolute -inset-[1px] -z-10 bg-md rounded-[30px]" />
+            <div className="bg-[#1A3453] py-6 px-7 w-full flex flex-col items-center rounded-[30px]">
+              <div className="mb-3">
+                <img src={item.pic} alt="" />
+              </div>
+              <div className="text-3xl font-semibold text-sky-500">
+                {item.title}
+              </div>
             </div>
           </div>
         ))}

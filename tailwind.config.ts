@@ -47,6 +47,7 @@ const config: Config = {
     },
     backgroundImage: {
       sm: "linear-gradient(270deg, rgba(68, 132, 255, 0.20) -0.55%, rgba(68, 176, 255, 0.20) 22.86%, rgba(0, 255, 255, 0.20) 48.36%, rgba(68, 165, 255, 0.20) 73.33%, rgba(125, 170, 255, 0.20) 99.34%)",
+      md: "linear-gradient(#0072FF, #00FFFF)",
       100: "url('/picture/Group 2049.png')",
     },
     container: {
@@ -58,7 +59,7 @@ const config: Config = {
     screens: {
       sm: "600px",
       md: "768px",
-      lg: "1020px",
+      lg: "1032px",
       xl: "1472px",
     },
   },
