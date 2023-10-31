@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, {Fragment} from "react";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
@@ -48,14 +49,16 @@ function Navbar() {
       <div className="lg:hidden">
         <div className="container">
           <div className="flex justify-between items-center gap-10">
-            <img className="w-16 md:w-20" src="/picture/Vector.svg" alt="" />
-            <div onClick={toggle}>
+            <Link href={"/"}>
+              <img className="w-16 md:w-20" src="/picture/Vector.svg" alt="" />
+            </Link>
+            <div role="button" onClick={toggle}>
               <img src="/picture/icons8-menu.svg" alt="" />
             </div>
           </div>
         </div>
         <Drawer
-          style={{width: "60%"}}
+          style={{width: "70%"}}
           open={open}
           onClose={toggle}
           direction="left"

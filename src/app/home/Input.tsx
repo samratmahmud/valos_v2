@@ -54,7 +54,35 @@ function Input() {
             </div>
           </div>
           <div>
-            <InputCard title="Budget" placeholder="Select an option..." />
+            <label className="md:text-base text-lg font-medium text-cyan-950 md:mb-2 mb-1.5">
+              Budget
+            </label>
+            <div className="w-full">
+              <select
+                className="w-full focus:outline-none border border-slate-300 rounded-md p-3"
+                name="text"
+                id=""
+              >
+                <option className="md:text-xl text-lg" value="">
+                  Select an option...
+                </option>
+                <option className="md:text-xl text-lg" value="Music">
+                  Music
+                </option>
+                <option className="md:text-xl text-lg" value="Music">
+                  Football
+                </option>
+                <option className="md:text-xl text-lg" value="Music">
+                  Gamse
+                </option>
+                <option className="md:text-xl text-lg" value="Music">
+                  Enjoing
+                </option>
+                <option className="md:text-xl text-lg" value="Music">
+                  Reading
+                </option>
+              </select>
+            </div>
           </div>
           <div>
             <p className="md:text-base text-lg font-medium text-cyan-950 mb-2">
