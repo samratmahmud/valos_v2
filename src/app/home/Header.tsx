@@ -31,7 +31,7 @@ function Header() {
       </div>
       <div
         role="button"
-        className="text-xl font-medium text-white bg-sky-500 py-3 px-10 rounded-lg font-manrope max-w-[172px] m-auto md:mb-[102px] mb-16"
+        className="text-xl font-medium text-white bg-sky-500 py-3 px-10 rounded-lg font-manrope max-w-[172px] m-auto md:mb-[102px] mb-16 hover:bg-blue-700 duration-300"
       >
         Get in touch
       </div>
@@ -39,12 +39,12 @@ function Header() {
         {networkCard.map((item, index) => (
           <div
             key={index}
-            className={`flex flex-col items-center relative z-0 lg:w-full w-[calc(100%)] md:w-[calc(50%-8px)] min-w-[174px] ${
+            className={`flex flex-col items-center relative z-0 lg:w-full w-[calc(100%)] md:w-[calc(50%-8px)] min-w-[175px] ${
               networkCard.length % 2 !== 0 ? "last:w-full" : ""
             } h-full`}
           >
-            <span className="absolute -inset-[1px] -z-10 bg-md rounded-[30px]" />
-            <div className="bg-[#1A3453] md:py-6 py-4 px-7 w-full flex flex-col items-center rounded-[30px]">
+            <span className="absolute -inset-[1px] -z-10 bg-md md:rounded-[30px] rounded-3xl" />
+            <div className="bg-[#1A3453] md:py-6 py-4 px-7 w-full flex flex-col items-center md:rounded-[30px] rounded-3xl">
               <div className="mb-3">
                 <img src={item.pic} alt="" />
               </div>

@@ -89,7 +89,7 @@ function Cards() {
                 {item.contant}
               </div>
             </div>
-            <div className="md:flex md:flex-wrap grid grid-cols-2 gap-9 items-center">
+            <div className="xl:flex xl:flex-wrap grid grid-cols-3 gap-9 items-center">
               {item.logos &&
                 item.logos.map((logo) => (
                   <div>

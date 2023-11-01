@@ -109,7 +109,7 @@ function Input() {
           </div>
           <div
             role="button"
-            className="text-lg text-white bg-cyan-950 md:py-4 py-2.5 md:px-5 px-4 rounded"
+            className="text-lg text-white bg-cyan-950 hover:bg-black duration-500 md:py-4 py-2.5 md:px-5 px-4 rounded"
           >
             Send Request
           </div>
