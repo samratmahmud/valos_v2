@@ -4,7 +4,10 @@ import React from "react";
 function Input() {
   return (
     <section className="container">
-      <div className="bg-white md:py-14 py-5 md:px-16 px-4 md:rounded-[30px] rounded-2xl mb-16">
+      <div
+        data-aos="zoom-in-up"
+        className="bg-white md:py-14 py-5 md:px-16 px-4 md:rounded-[30px] rounded-2xl mb-16"
+      >
         <div className="flex flex-col md:gap-5 gap-4 md:mb-11 mb-5">
           <div className="flex md:flex-row flex-col gap-4">
             <div className="md:w-1/2">

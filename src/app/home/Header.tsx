@@ -26,10 +26,14 @@ const networkCard = [
 function Header() {
   return (
     <div className="container relative z-50">
-      <div className="md:text-6xl text-4xl font-semibold text-white text-center md:mb-10 mb-6 max-w-[800px] m-auto">
+      <div
+        data-aos="fade-down-left"
+        className="md:text-6xl text-4xl font-semibold text-white text-center md:mb-10 mb-6 max-w-[800px] m-auto"
+      >
         Empowering Businesses with Full-Stack Excellence{" "}
       </div>
       <div
+        data-aos="fade-up-right"
         role="button"
         className="text-xl font-medium text-white bg-sky-500 py-3 px-10 rounded-lg font-manrope max-w-[172px] m-auto md:mb-[102px] mb-16 hover:bg-blue-700 duration-300"
       >
@@ -38,6 +42,7 @@ function Header() {
       <div className="flex lg:flex-row flex-wrap lg:flex-nowrap gap-4 lg:gap-5 justify-between lg:mb-48 mb-16">
         {networkCard.map((item, index) => (
           <div
+            data-aos={`${index % 2 === 0 ? "fade-left" : "fade-right"}`}
             key={index}
             className={`flex flex-col items-center relative z-0 lg:w-full w-[calc(100%)] md:w-[calc(50%-8px)] min-w-[175px] ${
               networkCard.length % 2 !== 0 ? "last:w-full" : ""
@@ -56,7 +61,7 @@ function Header() {
         ))}
       </div>
       <div className="flex lg:flex-row flex-col lg:gap-14 gap-7 justify-between items-center lg:mb-48 mb-12">
-        <div className="lg:max-w-[513px] text-white">
+        <div data-aos="fade-down-right" className="lg:max-w-[513px] text-white">
           <div className="md:text-5xl text-4xl font-semibold md:mb-10 mb-6">
             The unique promise for affordable work
           </div>
@@ -72,7 +77,7 @@ function Header() {
             compromising your budget.
           </div>
         </div>
-        <div>
+        <div data-aos="fade-down-left">
           <img className="w-screen" src="/picture/Frame 27.png" alt="" />
         </div>
       </div>

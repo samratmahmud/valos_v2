@@ -28,7 +28,10 @@ function Navbar() {
         <div className="container">
           <div className="flex items-center justify-between relative">
             {modifiedMenu.map((part, index) => (
-              <div className="flex justify-between items-center flex-[0_0_25%]">
+              <div
+                data-aos={`${index % 2 === 0 ? "fade-right" : "fade-left"}`}
+                className="flex justify-between items-center flex-[0_0_25%]"
+              >
                 {part.map((item) => (
                   <div
                     key={item.id}
@@ -41,7 +44,7 @@ function Navbar() {
             ))}
             <div className="flex justify-center absolute left-1/2 -translate-x-1/2">
               <span className="block w-[250px] h-[250px] bg-cyan-950 absolute top-[80%] -translate-y-1/2 left-1/2 -translate-x-1/2 -z-10 rotate-45" />
-              <img className="" src="/picture/Vector.svg" alt="" />
+              <img data-aos="fade-down" src="/picture/Vector.svg" alt="" />
             </div>
           </div>
         </div>

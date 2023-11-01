@@ -4,7 +4,7 @@ function Footer() {
   return (
     <section className="container">
       <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 items-center justify-between md:pt-16 md:pb-9 pb-5">
-        <div>
+        <div data-aos="fade-right">
           <div className="mb-6">
             <img src="/picture/logo valos.svg" alt="" />
           </div>
@@ -18,7 +18,7 @@ function Footer() {
             best practices.
           </div>
         </div>
-        <div className="md:text-right lg:text-left">
+        <div data-aos="fade-down" className="md:text-right lg:text-left">
           <div role="button" className="text-lg text-white md:mb-8 mb-3">
             sales@valosit.co.ik
           </div>
@@ -27,7 +27,7 @@ function Footer() {
             <p>London, United Kingdom, WC2H 9JQ</p>
           </div>
         </div>
-        <div>
+        <div data-aos="fade-left">
           <img src="/picture/image 3.png" alt="" />
         </div>
       </div>
